@@ -1,0 +1,7 @@
+function Buy()
+     local Ball = script.Parent.Ball.Value:Duplicate()
+     
+     Ball.Parent = game.Workspace
+end
+
+script.Parent.MouseButton1Click:Connect(Buy)
