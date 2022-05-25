@@ -1,0 +1,4 @@
+if script.DamageInflictedThisLevel == game.Players.LocalPlayer.PlayerScripts.Level.Value(5) then
+     script.DamageInfictedThisLevel = 0 
+     game.Players.LocalPlayer.PlayerScripts.Level.Value = game.Players.LocalPlayer.PlayerScripts.Level.Value +1
+end
