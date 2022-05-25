@@ -1,0 +1,165 @@
+
+if game.ServerStorage.PartsLeft.Value == 0 then
+     local randomPattern = math.Random("1", "2", "3", "4", "5", "6", "7", "8", "9", "10")
+     
+     local Pattern1 = game.ServerStorage.Patterns.Pattern1:Duplicate
+     local Pattern2 = game.ServerStorage.Patterns.Pattern2:Duplicate
+     local Pattern3 = game.ServerStorage.Patterns.Pattern3:Duplicate
+     local Pattern4 = game.ServerStorage.Patterns.Pattern4:Duplicate
+     local Pattern5 = game.ServerStorage.Patterns.Pattern5:Duplicate
+     local Pattern6 = game.ServerStorage.Patterns.Pattern6:Duplicate
+     local Pattern7 = game.ServerStorage.Patterns.Pattern7:Duplicate
+     local Pattern8 = game.ServerStorage.Patterns.Pattern8:Duplicate
+     local Pattern9 = game.ServerStorage.Patterns.Pattern9:Duplicate
+     local Pattern10 = game.ServerStorage.Patterns.Pattern10:Duplicate
+     
+     if randomPattern == 1 then
+          Pattern1.Parent = game.Workspace
+          
+          Pattern2:Destroy
+          Pattern3:Destroy
+          Pattern4:Destroy
+          Pattern5:Destroy
+          Pattern6:Destroy
+          Pattern7:Destroy
+          Pattern8:Destroy
+          Pattern9:Destroy
+          Pattern10:Destroy
+          
+     end
+     
+     if randomPattern == 2 then
+          Pattern2.Parent = game.Workspace
+          
+          Pattern1:Destroy
+          Pattern3:Destroy
+          Pattern4:Destroy
+          Pattern5:Destroy
+          Pattern6:Destroy
+          Pattern7:Destroy
+          Pattern8:Destroy
+          Pattern9:Destroy
+          Pattern10:Destroy
+          
+     end
+     
+     if randomPattern == 3 then
+          Pattern3.Parent = game.Workspace
+          
+          Pattern2:Destroy
+          Pattern1:Destroy
+          Pattern4:Destroy
+          Pattern5:Destroy
+          Pattern6:Destroy
+          Pattern7:Destroy
+          Pattern8:Destroy
+          Pattern9:Destroy
+          Pattern10:Destroy
+          
+     end
+     
+     if randomPattern == 4 then
+          Pattern4.Parent = game.Workspace
+          
+          Pattern2:Destroy
+          Pattern3:Destroy
+          Pattern1:Destroy
+          Pattern5:Destroy
+          Pattern6:Destroy
+          Pattern7:Destroy
+          Pattern8:Destroy
+          Pattern9:Destroy
+          Pattern10:Destroy
+          
+     end
+     
+     if randomPattern == 5 then
+          Pattern5.Parent = game.Workspace
+          
+          Pattern2:Destroy
+          Pattern3:Destroy
+          Pattern4:Destroy
+          Pattern1:Destroy
+          Pattern6:Destroy
+          Pattern7:Destroy
+          Pattern8:Destroy
+          Pattern9:Destroy
+          Pattern10:Destroy
+          
+     end
+     
+     if randomPattern == 6 then
+          Pattern6.Parent = game.Workspace
+          
+          Pattern2:Destroy
+          Pattern3:Destroy
+          Pattern4:Destroy
+          Pattern5:Destroy
+          Pattern1:Destroy
+          Pattern7:Destroy
+          Pattern8:Destroy
+          Pattern9:Destroy
+          Pattern10:Destroy
+          
+     end
+     
+     if randomPattern == 7 then
+          Pattern7.Parent = game.Workspace
+          
+          Pattern2:Destroy
+          Pattern3:Destroy
+          Pattern4:Destroy
+          Pattern5:Destroy
+          Pattern6:Destroy
+          Pattern1:Destroy
+          Pattern8:Destroy
+          Pattern9:Destroy
+          Pattern10:Destroy
+          
+     end
+     
+     if randomPattern == 8 then
+          Pattern8.Parent = game.Workspace
+          
+          Pattern2:Destroy
+          Pattern3:Destroy
+          Pattern4:Destroy
+          Pattern5:Destroy
+          Pattern6:Destroy
+          Pattern7:Destroy
+          Pattern1:Destroy
+          Pattern9:Destroy
+          Pattern10:Destroy
+          
+     end
+     
+     if randomPattern == 9 then
+          Pattern9.Parent = game.Workspace
+          
+          Pattern2:Destroy
+          Pattern3:Destroy
+          Pattern4:Destroy
+          Pattern5:Destroy
+          Pattern6:Destroy
+          Pattern7:Destroy
+          Pattern8:Destroy
+          Pattern1:Destroy
+          Pattern10:Destroy
+          
+     end
+     
+     if randomPattern == 10 then
+          Pattern10.Parent = game.Workspace
+          
+          Pattern2:Destroy
+          Pattern3:Destroy
+          Pattern4:Destroy
+          Pattern5:Destroy
+          Pattern6:Destroy
+          Pattern7:Destroy
+          Pattern8:Destroy
+          Pattern9:Destroy
+          Pattern1:Destroy
+          
+     end
+end
