@@ -1,0 +1,62 @@
+local function GetParts() = game.Workspace:GetChildren()
+
+function PartHit()
+     local function GetDifference("x") = PartHit.Parent.Position.Vector3.new(x, 0, 0) - PartHit.Position.Vector3.new(x, 0, 0)
+     local function GetDifference("y") = PartHit.Parent.Position.Vector3.new(0, y, 0) - PartHit.Position.Vector3.new(0, y, 0)
+     local function GetDifference("z") = PartHit.Parent.Position.Vector3.new(0, 0, z) - PartHit.Position.Vector3.new(0, 0, z)
+     
+     
+     script.xDifference.Value = function GetDifference("x")
+     script.yDifference.Value = function GetDifference("y")
+     script.zDifference.Value = function GetDifference("z")
+     
+     
+     wait(1)
+     
+     script.xDifference2.Value = function GetDifference("x")
+     script.yDifference2.Value = function GetDifference("y")
+     script.zDifference2.Value = function GetDifference("z")
+     
+     local function FindXVelocity = script.xDifference.Value - script.xDifference2
+     local function FindYVelocity = script.yDifference.Value - script.yDifference2
+     local function FindZVelocity = script.zDifference.Value - script.zDifference2
+     
+     local function newVelocity = Instance.new("Velocity")
+     local function oldVelocity = Instance.new("Velocity")
+     
+     
+     if PartHit.Anchored == true then
+          function newVelocity.Parent = PartHit.Parent
+               whle true do 
+                    if script.PartsForeverMove.Value == false
+                         newVelocity.Velocity = Vector3.new(function FindXVelocity, function FindYVelocity, function FindZVelocity)
+                         wait(0.05)
+                         newVelocity.Velocity = Vector3.new(function FindXVelocity, function FindYVelocity, function FindZVelocity) - Vector3.new(0.1, 0.1, 0.1)
+                    else
+                         newVelocity.Velocity = Vector3.new(function FindXVelocity, function FindYVelocity, function FindZVelocity)
+                    end
+               end
+          end
+     end
+     
+     if PartHit.Anchored == false then
+          function newVelocity.Parent = PartHit.Parent
+          function oldVelocity.Parent = PartHit
+               whle true do 
+                    if script.PartsForeverMove.Value == false
+                         newVelocity.Velocity = Vector3.new(function FindXVelocity, function FindYVelocity, function FindZVelocity)
+                         oldVelocity.Velocity = Vector3.new(function FindXVelocity, function FindYVelocity, function FindZVelocity)
+                         wait(0.05)
+                         
+                         newVelocity.Velocity = Vector3.new(function FindXVelocity, function FindYVelocity, function FindZVelocity) - Vector3.new(0.1, 0.1, 0.1)
+                         oldVelocity.Velocity = Vector3.new(function FindXVelocity, function FindYVelocity, function FindZVelocity) - Vector3.new(0.1, 0.1, 0.1)
+                    else
+                         newVelocity.Velocity = Vector3.new(function FindXVelocity, function FindYVelocity, function FindZVelocity)
+                         oldVelocity.Velocity = Vector3.new(function FindXVelocity, function FindYVelocity, function FindZVelocity)
+                    end
+               end
+          end
+     end
+end
+
+GetParts().Touched:Connect(PartHit)
