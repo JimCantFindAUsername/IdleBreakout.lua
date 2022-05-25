@@ -1,0 +1,22 @@
+function Click()
+     script.Parent.PartHealth.Value = script.Parent.PartHealth.Value-1
+end
+
+function Hit()
+     script.Parent.PartHealth.Value = script.Parent.PartHealth.Value - Hit.Parent.BallDamageValue
+end
+
+script.Parent.ClickDetector.Clicked:Connect(Click)
+script.Parent.Touched:Connect(Hit)
+
+if script.Parent.PartHealth.Value == 0 then
+     script.Parent:Destroy
+     game.ServerStorage.PartsLeft.Value = game.ServerStorage.PartsLeft.Value-1
+     game.ServerScriptStorage.LevelsScript.Destroyed.Value = game.ServerScriptStorage.LevelsScript.Destroyed.Value + 1
+     game.ServerScriptStorage.LevelsScript.DamageInflictedThisLevel = game.ServerScriptStorage.LevelsScript.DamageInflictedThisLevel + script.Parent.Name
+     game.ServerScriptStorage.LevelsScript.DamageInflicted = game.ServerScriptStorage.LevelsScript.DamageInflicted + script.Parent.Name
+end
+
+while true do
+     script.Parent.SurfaceGUI.Text.Text = script.Parent.PartHealth.Value
+end
